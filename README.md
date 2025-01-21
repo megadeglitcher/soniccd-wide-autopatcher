@@ -1,4 +1,4 @@
 # sonic-wide-autopatcher
-Widescreen patching tool for classic Sonic games and romhacks.
+Widescreen patching tool for Sonic CD 1993 MMD files
 
-https://heyjoeway.github.io/sonic-wide-autopatcher/
+https://megadeglitcher.github.io/soniccd-wide-autopatcher/
