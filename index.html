@@ -424,7 +424,6 @@
             reader.onload = e => {
                 log("Done!");
                 let filenameArr = fileDesc.name.split('.');
-                filenameArr.splice(-1, 0, 'MMD');
                 let filename = filenameArr.join('.');
                 downloadBlob(
                     patch(
