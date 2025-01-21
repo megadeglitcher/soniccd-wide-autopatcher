@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    Supports S1 and S2 roms. Not guaranteed to be compatible with all.
+    Supports SCD level MMD files. Not guaranteed to work with every MMD file that's not a level.
     <br>
     <input type="file" id="file" />
     <div id="log"></div>
@@ -156,8 +156,7 @@
                 name: "Render objects left of screen",
                 explanation: "bmi.w	@skipObject -> nop nop",
                 queries: [
-                    [0x96, 0x51, 0x32, 0x03, 0xD2, 0x40],
-                    [0x96, 0x54, 0x32, 0x03, 0xD2, 0x40]
+                    [0x07, 0x00, 0x00, 0x04, 0x65, 0x0A]
                 ],
                 replacements: [
                     {
@@ -211,9 +210,9 @@
                 ]
             },
             {
-                name: "Move HUD left 40px (S1)",
+                name: "Move HUD left 40px (SCD)",
                 explanation: "",
-                queries: [[0x31, 0x7C, 0x00, 0x90, 0x00, 0x08, 0x31, 0x7C, 0x01, 0x08, 0x00, 0x0A]],
+                queries: [[0x31, 0x7C, 0x00, 0x90, 0x00, 0x08, 0x31, 0x7C, 0x09, 0x88, 0x00, 0x0A]],
                 replacements: [
                     {
                         offset: 3,
